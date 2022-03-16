@@ -1,4 +1,4 @@
-package com.optimagrowth.license.service;
+package com.github.sbzorro.license.service;
 
 import java.util.Locale;
 import java.util.Random;
@@ -8,7 +8,7 @@ import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import com.optimagrowth.license.model.License;
+import com.github.sbzorro.license.model.License;
 
 @Service
 public class LicenseService {

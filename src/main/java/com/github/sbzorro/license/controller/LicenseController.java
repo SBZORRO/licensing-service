@@ -1,4 +1,4 @@
-package com.optimagrowth.license.controller;
+package com.github.sbzorro.license.controller;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.optimagrowth.license.model.License;
-import com.optimagrowth.license.service.LicenseService;
+import com.github.sbzorro.license.model.License;
+import com.github.sbzorro.license.service.LicenseService;
 
 @RestController
 @RequestMapping(value="v1/organization/{organizationId}/license")

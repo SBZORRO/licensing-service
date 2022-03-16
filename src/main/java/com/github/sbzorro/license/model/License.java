@@ -1,10 +1,7 @@
-package com.optimagrowth.license.model;
+package com.github.sbzorro.license.model;
 
 import org.springframework.hateoas.RepresentationModel;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 
 
 public class License extends RepresentationModel<License> {

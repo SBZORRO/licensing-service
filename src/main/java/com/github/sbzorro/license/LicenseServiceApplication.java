@@ -1,4 +1,4 @@
-package com.optimagrowth.license;
+package com.github.sbzorro.license;
 
 import java.util.Locale;
 
