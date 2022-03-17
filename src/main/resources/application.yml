@@ -1,3 +1,24 @@
+spring:
+  application:
+    name: licensing-service
+  profiles:
+     active: dev  
+  config:
+    import: configserver:http://172.17.0.1:8071
+#    fail-fast: true
+#      spring.config.import=configserver:http://localhost:8888
+management:
+  endpoints:
+    enabled-by-default: false
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+  health:
+    db:
+      enabled: false
+    diskspace:
+      enabled: true
 #auditevents	,	Exposes audit events information for the current application.
 #beans	,	Displays a complete list of all the Spring beans in your application.
 #caches	,	Exposes available caches.
@@ -19,8 +40,8 @@
 #threaddump	,	Performs a thread dump.
 
 #management.endpoints.web.base-path=/
-management.endpoints.enabled-by-default=false
-management.endpoint.health.enabled=true
-management.endpoint.health.show-details=always
-management.health.db.enabled=false
-management.health.diskspace.enabled=true
+
+
+
+
+
