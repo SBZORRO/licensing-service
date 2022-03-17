@@ -1,10 +1,10 @@
 spring:
   application:
-    name: licensing-service
+    name: licensingservice
   profiles:
      active: dev  
   config:
-    import: configserver:http://172.17.0.1:8071
+    import: http://${CONFIG_HOST:localhost}:${CONFIG_PORT:8071}
 #    fail-fast: true
 #      spring.config.import=configserver:http://localhost:8888
 management:
