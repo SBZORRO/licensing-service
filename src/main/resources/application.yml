@@ -5,7 +5,7 @@ spring:
      active: dev  
   config:
     import: optional:configserver:http://${CONFIG_HOST:localhost}:${CONFIG_PORT:8071}
-    fail-fast: true
+#    fail-fast: true
 management:
   endpoints:
     enabled-by-default: false
