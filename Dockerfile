@@ -29,6 +29,6 @@ COPY --from=build ${DEPENDENCY}/META-INF 			/app/META-INF
 COPY --from=build ${DEPENDENCY}/BOOT-INF/classes 	/app
 
 #execute the application
-ENTRYPOINT ["sh", "-c", "sleep 15 && java -cp app:app/lib/* com.github.sbzorro.license.LicenseServiceApplication"]
+ENTRYPOINT ["sh", "-c", "java -cp app:app/lib/* com.github.sbzorro.license.LicenseServiceApplication"]
 
 EXPOSE 8080
